@@ -1,0 +1,49 @@
+/* do not change! */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: lightsteelblue;
+    color: darkslategrey;
+}
+
+#container {
+    margin: auto;
+    padding: 10px;
+    width: 980px;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.fancyborder {
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline
+}

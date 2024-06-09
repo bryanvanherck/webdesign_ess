@@ -1,0 +1,100 @@
+* {
+    padding: 5px;
+    margin: 3px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.5;
+    color: black;
+    background-color: floralwhite;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+#container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    margin-left: 10px;
+}
+
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: yellow;
+        color: white
+    }
+
+    #container {
+        background-color: navy;
+    }
+
+    img {
+        width: 250px;
+        height: 400px;
+        object-fit: cover;
+
+    }
+
+    #fowler {
+        object-position: top center;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 1100px) {
+    body {
+        background-color: blue;
+        background-image: url(backgroundlfc.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: bottom center;
+    }
+
+    #container {
+        background-color: rgba(255, 255, 255, .2);
+    }
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#trent {
+    object-position: top;
+}
+
+#fowler {
+    object-position: top center;
+}
+
+#La {
+    object-position: top;
+}
+
+#Gerry {
+    object-position: top;
+}

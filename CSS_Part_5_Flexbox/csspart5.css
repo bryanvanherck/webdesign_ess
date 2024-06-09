@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+body {
+    background-color: navy;
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+}
+
+h3 {
+    color: gold;
+    font-size: 23px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+
+
+.parent {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem;
+
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.gk,
+.def,
+.mid,
+.att {
+    padding: 0.2rem;
+    border: 1px solid blue;
+    background-color: rgba(39, 68, 136);
+    color: white;
+    width: 6rem;
+    align-self: center;
+}
+
+.center {
+    justify-content: center;
+}
+
+.mid:nth-child(1) {
+    color: yellow;
+    order: 1;
+}
+
+.mid:nth-child(4) {
+    order: -1;
+}
+
+.background {
+
+    background-image: url(grasje.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.staff {
+    background-color: gold;
+    color: black;
+    padding: .5rem;
+    text-align: center;
+}
+
+.staff:nth-child(1) {
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: gold;
+
+}
+
+nav li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav li.spacer {
+    display: none;
+}
+
+nav a {
+    flex: 1 1 auto;
+    text-decoration: none;
+    font-weight: bold;
+    color: navy;
+    line-height: 3;
+}
+
+@media screen and (min-width: 700px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li.spacer {
+        display: block;
+        flex: 2 1 auto;
+    }
+}

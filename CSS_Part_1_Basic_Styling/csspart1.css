@@ -1,0 +1,88 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background: rgb(200, 16, 46);
+    background: linear-gradient(90deg, rgba(200, 16, 46, 1) 0%, rgba(0, 51, 153, 1) 100%);
+}
+
+#container {
+    margin: auto;
+    padding: 10px;
+    max-width: 1000px;
+    background-color: #fff;
+    color: black;
+}
+
+h1 {
+    font-size: 55px;
+    font-family: serif, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 5px #ff0000;
+    color: #003399;
+    border: 3px solid grey;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 178, 169, 0.7);
+
+}
+
+h2 {
+    color: #ff0000;
+    font-size: 2rem;
+
+}
+
+h3 {
+    color: #003399;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+ul {
+    list-style-position: inside;
+    list-style-image: url(balletjekleinpng.png);
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+table,
+td,
+th {
+    border: 1px solid #000;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+th:first-child {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+th:nth-child(2) {
+    background-color: #003399;
+    color: #fff;
+}
+
+td:first-child {
+    color: red;
+}
+
+td:nth-child(4) {
+    color: blue;
+}
+
+footer {
+    background-image: url(footballstadium.jpg);
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}

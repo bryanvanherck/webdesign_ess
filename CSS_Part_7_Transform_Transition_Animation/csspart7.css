@@ -1,0 +1,132 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+
+* {
+    padding: 3px;
+    margin: 3px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.5;
+    color: white;
+    background-color: darkgrey;
+}
+
+
+h1 {
+    font-size: 35px;
+}
+
+
+
+
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.liverbuilding,
+.radio {
+    object-position: top;
+}
+
+.docks:hover {
+    transform: rotate(5deg);
+    transform-origin: right bottom;
+}
+
+.stad:hover {
+    transform: scale(1.3);
+}
+
+.city {
+    transition: width 2s;
+}
+
+.city:hover {
+    width: 500px;
+}
+
+.beatles {
+    transition: 2s;
+}
+
+.beatles:hover {
+    filter: grayscale(1);
+    transform: scale(0.9);
+    box-shadow: 0 0 15px white;
+}
+
+.radio {
+    background: black;
+    transition-property: width, height;
+    transition-duration: 2s, 4s;
+    transition-delay: 0s, 2s;
+    transition-timing-function: linear;
+}
+
+.radio:hover {
+    width: 200px;
+    height: 200px;
+}
+
+.liverbuilding,
+.supporters {
+    animation: DarkLight 8s infinite;
+}
+
+@keyframes DarkLight {
+    0% {
+        filter: brightness(0.8);
+    }
+
+    100% {
+        filter: brightness(1.3);
+    }
+}
+
+.bounce {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    animation: bounce 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0px, 0);
+    }
+
+    to {
+        transform: translate3d(0, -200px, 0);
+    }
+}
+
+.anfield:hover {
+    transform: translateX(50px) rotate(2deg);
+}
+
+.mural:hover {
+    transform: scale(0.8);
+}
+
+@media screen and (min-width: 800px) {
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 33.33%;
+        padding: 5px;
+    }
+}
